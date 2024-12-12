@@ -1,0 +1,69 @@
+/* Căn giữa văn bản */
+table.text-center th,
+table.text-center td {
+  text-align: center;
+}
+
+/* Hiệu ứng hover hàng */
+tbody tr:hover {
+  background-color: rgb(171, 243, 239);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+/* Đặt cột trạng thái ở vị trí tương đối */
+.status-column {
+  position: relative;
+}
+
+/* Nội dung trạng thái mặc định */
+.status-content {
+  transition: opacity 0.3s ease-in-out; /* Hiệu ứng mờ dần */
+}
+
+/* Ẩn nội dung trạng thái khi hover */
+.table-row:hover .status-content {
+  opacity: 0;
+}
+
+/* Nút Sửa và Xóa */
+.action-buttons {
+  position: absolute;
+  top: 50%;
+  left: 100%; /* Bắt đầu từ ngoài khung cột */
+  transform: translate(-105%, -50%); /* Hiệu ứng xuất hiện từ phải sang trái */
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hiển thị nút khi hover */
+.table-row:hover .action-buttons {
+  opacity: 1;
+}
+
+/* Style cho nút */
+.action-buttons .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Màu sắc nút */
+.btn-edit {
+  background-color: #2775e1; /* Xanh lá */
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f44336; /* Đỏ */
+  color: white;
+}
+
+/* Đảm bảo modal có z-index cao hơn các phần tử khác */
+.modal {
+  z-index: 1050;
+}

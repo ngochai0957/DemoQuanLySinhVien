@@ -1,0 +1,175 @@
+[
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "QuanLySinhVien.DTO.DangnhapLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "QuanLySinhVien.DTO.LogoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.LichSuDangNhapController",
+    "Method": "GetAllLichSu",
+    "RelativePath": "api/LichSuDangNhap/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.PhanhoiController",
+    "Method": "ReplyToFeedback",
+    "RelativePath": "api/Phanhoi/reply/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "response",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.PhanhoiController",
+    "Method": "SendFeedback",
+    "RelativePath": "api/Phanhoi/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedback",
+        "Type": "QuanLySinhVien.DTO.PhanhoiDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.PhanhoiController",
+    "Method": "GetUnansweredFeedbacks",
+    "RelativePath": "api/Phanhoi/unanswered",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.SinhVienController",
+    "Method": "GetStudent",
+    "RelativePath": "api/SinhVien/{mssv}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mssv",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.SinhVienController",
+    "Method": "AddSinhVien",
+    "RelativePath": "api/SinhVien/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sinhVien",
+        "Type": "QuanLySinhVien.Models.Sinhvien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.SinhVienController",
+    "Method": "GetAllSinhVien",
+    "RelativePath": "api/SinhVien/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.SinhVienController",
+    "Method": "DeleteSinhVien",
+    "RelativePath": "api/SinhVien/delete/{mssv}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mssv",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "deleteSinhVien",
+        "Type": "QuanLySinhVien.DTO.DeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLySinhVien.Controllers.SinhVienController",
+    "Method": "UpdateSinhVien",
+    "RelativePath": "api/SinhVien/update/{mssv}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mssv",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedSinhVien",
+        "Type": "QuanLySinhVien.DTO.UpdateSinhVien",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
